@@ -1,102 +1,196 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Playfair_Display, Caveat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const caveat = Caveat({
   subsets: ["latin"],
+  variable: "--font-caveat",
+  display: "swap",
 });
 
+// ─────────────────────────────────────────────────────────────────────────────
+// METADATA — Root layout (/) — English default
+// ─────────────────────────────────────────────────────────────────────────────
 export const metadata = {
-  metadataBase: new URL("https://www.bocasblufftours.com"),
+  metadataBase: new URL("https://bocasblufftours.com"),
 
   title: {
-    default: "WildBluff | Jungle & Beach Nature Tours · Bocas del Toro, Panama",
-    template: "%s | WildBluff",
+    default:  "Bocas del Toro Tours | Jungle & Beach Excursions – Native Ngöbe Guide",
+    template: "%s | Bocas Bluff Tours",
   },
   description:
-    "Guided jungle and beach tours with Luis, a native Ngöbe guide from Bluff Beach, Bocas del Toro. Discover sloths, howler monkeys, poison dart frogs, and tropical wildlife on a small-group tour in Panama.",
-
+    "Guided tours in Bocas del Toro, Isla Colón, Panama. Jungle & Playa Bluff beach excursions with Luis, a native Ngöbe guide. Small groups. Book on WhatsApp.",
   keywords: [
-    "Bocas del Toro tours",
-    "Bluff Beach tours",
-    "Panama nature tour",
-    "jungle tour Panama",
-    "Ngöbe guide",
-    "wildlife tour Bocas del Toro",
-    "sloth tour Panama",
-    "eco tour Panama",
-    "Bluff Beach guide",
-    "small group nature tour",
+    "bocas del toro tours",
+    "bocas del toro guided tour",
+    "isla colon tours panama",
+    "jungle tour bocas del toro",
+    "playa bluff tour",
+    "bocas del toro nature tour",
+    "native guide bocas del toro",
+    "sloth tour bocas del toro",
+    "wildlife tour bocas del toro",
+    "bocas bluff tours",
+    "bocas del toro excursion",
+    "things to do bocas del toro",
   ],
 
-  authors: [{ name: "Luis", url: "https://www.bocasblufftours.com" }],
-  creator: "WildBluff",
+  // ── Canonical & hreflang ──────────────────────────────────────────────────
+  alternates: {
+    canonical: "https://bocasblufftours.com",
+    languages: {
+      "en":        "https://bocasblufftours.com",
+      "es":        "https://bocasblufftours.com/es",
+      "x-default": "https://bocasblufftours.com",
+    },
+  },
 
+  // ── Open Graph ────────────────────────────────────────────────────────────
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    alternateLocale: "es_PA",
-    url: "https://www.bocasblufftours.com",
-    siteName: "WildBluff",
-    title: "WildBluff | Jungle & Beach Nature Tours · Bocas del Toro, Panama",
+    type:            "website",
+    url:             "https://bocasblufftours.com",
+    siteName:        "Bocas Bluff Tours",
+    locale:          "en_US",
+    alternateLocale: ["es_PA"],
+    title:           "Bocas del Toro Tours | Jungle & Beach Excursions with a Native Guide",
     description:
-      "Small-group jungle and beach tours with Luis, a native Ngöbe guide from Bluff Beach, Bocas del Toro, Panama. Sloths, monkeys, exotic birds and more.",
+      "Guided tours in Bocas del Toro, Isla Colón, Panama. Jungle & Playa Bluff beach excursions with Luis, a native Ngöbe guide. Small groups only.",
     images: [
       {
-        url: "/og-image.jpg",
-        width: 1200,
+        url:    "/og-image.jpg",
+        width:  1200,
         height: 630,
-        alt: "WildBluff nature tours — Bluff Beach, Bocas del Toro, Panama",
+        alt:    "Bocas del Toro Tours – Jungle & Playa Bluff beach excursions with native Ngöbe guide Luis, Isla Colón, Panama",
       },
     ],
   },
 
+  // ── Twitter / X Card ──────────────────────────────────────────────────────
   twitter: {
-    card: "summary_large_image",
-    title: "WildBluff | Jungle & Beach Nature Tours · Bocas del Toro, Panama",
-    description:
-      "Small-group jungle and beach tours with Luis, a native Ngöbe guide from Bluff Beach, Bocas del Toro, Panama.",
-    images: ["/og-image.jpg"],
+    card:        "summary_large_image",
+    title:       "Bocas del Toro Tours | Jungle & Beach Excursions",
+    description: "Guided tours in Bocas del Toro with Luis, a native Ngöbe guide from Playa Bluff. Small groups. Book on WhatsApp.",
+    images:      ["/og-image.jpg"],
   },
 
-  alternates: {
-    canonical: "https://www.bocasblufftours.com",
-    languages: {
-      "en":    "https://www.bocasblufftours.com",
-      "es":    "https://www.bocasblufftours.com/es",
-      "x-default": "https://www.bocasblufftours.com",
-    },
-  },
-
+  // ── Robots ────────────────────────────────────────────────────────────────
   robots: {
-    index: true,
+    index:  true,
     follow: true,
     googleBot: {
-      index: true,
-      follow: true,
+      index:               true,
+      follow:              true,
+      "max-video-preview": -1,
       "max-image-preview": "large",
-      "max-snippet": -1,
+      "max-snippet":       -1,
     },
   },
 
+  // ── Icons ─────────────────────────────────────────────────────────────────
   icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico",   sizes: "any"              },
+      { url: "/icon-16.png",   type: "image/png", sizes: "16x16"   },
+      { url: "/icon-32.png",   type: "image/png", sizes: "32x32"   },
+      { url: "/icon-192.png",  type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png",  type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180" },
+    ],
   },
+
+  manifest: "/site.webmanifest",
+  category: "travel",
 };
 
+// ─────────────────────────────────────────────────────────────────────────────
+// JSON-LD — LocalBusiness + TouristAttraction structured data (EN)
+// ─────────────────────────────────────────────────────────────────────────────
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "TouristInformationCenter"],
+      "@id":   "https://bocasblufftours.com/#business",
+      name:    "Bocas Bluff Tours",
+      url:     "https://bocasblufftours.com",
+      logo:    "https://bocasblufftours.com/icon-512.png",
+      image:   "https://bocasblufftours.com/og-image.jpg",
+      description:
+        "Guided nature tours in Bocas del Toro, Isla Colón, Panama. Jungle and beach excursions along Playa Bluff with Luis, a native Ngöbe guide.",
+      telephone: "+50765330998",
+      address: {
+        "@type":         "PostalAddress",
+        streetAddress:   "Playa Bluff",
+        addressLocality: "Isla Colón",
+        addressRegion:   "Bocas del Toro",
+        addressCountry:  "PA",
+      },
+      geo: {
+        "@type":    "GeoCoordinates",
+        latitude:    9.4167,
+        longitude:  -82.2833,
+      },
+      openingHoursSpecification: {
+        "@type":    "OpeningHoursSpecification",
+        dayOfWeek:  ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        opens:      "06:00",
+        closes:     "18:00",
+      },
+      priceRange:         "$$",
+      currenciesAccepted: "USD",
+      paymentAccepted:    "Cash, WhatsApp payment",
+      areaServed: {
+        "@type": "Place",
+        name:    "Bocas del Toro, Panama",
+      },
+      contactPoint: {
+        "@type":           "ContactPoint",
+        telephone:         "+50765330998",
+        contactType:       "reservations",
+        availableLanguage: ["English", "Spanish"],
+      },
+      sameAs: ["https://wa.me/50765330998"],
+    },
+    {
+      "@type":       "TouristAttraction",
+      "@id":         "https://bocasblufftours.com/#attraction",
+      name:          "Playa Bluff Nature Tours – Bocas del Toro",
+      description:   "Guided jungle and beach tours in Bocas del Toro with a native Ngöbe guide. Small groups, wildlife spotting, indigenous cultural knowledge.",
+      url:           "https://bocasblufftours.com",
+      touristType:   ["Nature lovers", "Wildlife enthusiasts", "Ecotourists", "Families"],
+      availableLanguage: ["English", "Spanish"],
+      address: {
+        "@type":         "PostalAddress",
+        addressLocality: "Isla Colón",
+        addressRegion:   "Bocas del Toro",
+        addressCountry:  "PA",
+      },
+    },
+  ],
+};
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Layout
+// ─────────────────────────────────────────────────────────────────────────────
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${playfair.variable} ${caveat.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

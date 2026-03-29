@@ -19,56 +19,59 @@ const T = {
   },
 
   hero: {
-    location: "Bocas del Toro · Panama",
-    title1:   "The Jungle is",
-    titleEm:  "Alive.",
-    title2:   "Come Discover It.",
-    sub:      "Guided nature tours through jungle and beach with Luis — a Bluff Beach native and lifelong guardian of his wild coastline.",
+    location: "Bocas del Toro · Isla Colon · Panama",
+    // ── SEO: H1 leads with high-intent English keywords ──
+    title1:   "Tours in",
+    titleEm:  "Playa Bluff",
+    title2:   "with a native jungle guide from Bocas.",
+    // ── SEO: subtitle targets long-tail adventure seekers ──
+    sub:      "Guided jungle and beach excursions on Isla Colon with Luis — born in Playa Bluff and lifelong guardian of this pristine coast's wildlife.",
     cta1:     "View Tours",
     cta2:     "Meet Luis",
     scroll:   "Scroll",
   },
 
   ticker: [
-    "🌿 Jungle",
-    "🦜 Exotic Birds",
+    "🌿 Bocas del Toro Jungle",
+    "🦜 Exotic Birds Isla Colon",
     "🥥 Ngöbe Culture",
-    "🌊 Bluff Beach",
+    "🌊 Playa Bluff",
     "🦥 Wild Sloths",
     "🐒 Howler Monkeys",
     "🌺 Tropical Flora",
-    "🐸 Poison Frogs",
+    "🐸 Poison Dart Frogs",
   ],
 
   about: {
-    eyebrow:  "Meet your guide",
+    eyebrow:  "Your Guide in Bocas del Toro",
     title1:   "A life in the",
-    titleEm:  "jungle",
-    title2:   "is your greatest teacher.",
-    p1: "Luis was born and raised on Bluff Island, surrounded by the same jungle, beaches, and wildlife he now shares with visitors. He is Ngöbe — part of the indigenous community that has lived with and from this land for centuries.",
-    p2: "His knowledge goes far beyond any guidebook. He knows which leaf heals a sting, where sloths sleep, how the manakin bird dances to attract a mate, and the stories his culture has woven around every plant and animal along this coast. Walking with Luis is walking with the forest itself.",
-    quote:    "\"I don’t just show you the jungle — I teach you how to see it.\"",
+    titleEm:  "Bluff Jungle",
+    title2:   "is your best teacher.",
+    p1: "Luis was born and raised in Playa Bluff, Isla Colon — surrounded by the very same jungle, beaches, and wildlife he now shares with visitors. He is Ngöbe, part of the indigenous community that has lived with and from this Panamanian land for centuries.",
+    p2: "His knowledge goes far beyond any Bocas del Toro travel guide. He knows which leaf heals a sting, where the sloths sleep, how the manakin bird dances to attract a mate, and the stories his culture has woven around every plant and animal on this coast. To hike with Luis is to walk with the forest itself.",
+    quote:    "\"I don't just show you the Bocas jungle — I teach you how to see it.\"",
     quoteBy:  "— Luis",
-    badge:    { label: "Your Guide", name: "Luis", sub: "Bluff Island Native" },
-    tags:     ["Native Ngöbe Guide", "Wildlife Expert", "Born in Bluff", "Spanish & English", "Small Groups Only"],
+    badge:    { label: "Your Bocas Guide", name: "Luis", sub: "Playa Bluff Native · Isla Colon" },
+    tags:     ["Native Ngöbe Guide", "Wildlife Expert", "Born in Playa Bluff", "English & Spanish", "Small Groups Only"],
   },
 
   tours: {
-    eyebrow: "Choose your adventure",
-    title1:  "Two trails.",
-    titleEm: "Endless",
-    title2:  "discoveries.",
+    eyebrow: "Excursions in Bocas del Toro",
+    title1:  "Two paths.",
+    titleEm: "Infinite",
+    title2:  "discoveries on Isla Colon.",
     cta:     "Book via WhatsApp →",
   },
 
   tour1: {
-    tag:   "🌿 Jungle Trail",
-    num:   "Trail 01",
-    title: "Manakin Trail",
-    desc:  "Starting at the bright edge of Bluff Beach, this trail takes you deep into the jungle where towering ceiba trees, howler monkeys, jewel-like manakin birds, and hundreds of plant species share the same green cathedral. Luis shares how the Ngöbe people have lived alongside these plants and animals for generations.",
+    tag:   "🌿 Jungle Tour · Bocas del Toro",
+    num:   "Tour 01",
+    title: "Manakin Trail Tour",
+    // ── SEO: "Bocas jungle tour", "Isla Colon hiking" ──
+    desc:  "Starting at the shimmering edge of Playa Bluff, this Isla Colon jungle excursion takes you deep beneath towering Ceiba trees where howler monkeys, jewel-toned manakin birds, and hundreds of plant species share the same cathedral of green. Luis shares how the Ngöbe people have lived alongside these plants and animals for generations — a Bocas del Toro jungle tour like no other.",
     details: [
       ["⏱", "2–3 hours"],
-      ["📍", "Starts at Bluff Beach"],
+      ["📍", "Starts at Playa Bluff, Isla Colon"],
       ["👟", "Easy to moderate — all levels"],
       ["🌅", "Morning departure recommended"],
       ["👥", "Max. 8 people per group"],
@@ -76,31 +79,32 @@ const T = {
   },
 
   tour2: {
-    tag:   "🌊 Beach Trail",
-    num:   "Trail 02",
-    title: "Sloth Trail",
-    desc:  "Named after the sloths that lazily hang from coastal palm trees, this gentle beach walk follows the wild edge of Bluff’s coastline. Luis shares deep Ngöbe knowledge — the stories behind coastal plants, the wildlife that depends on this Caribbean shore, and what it means to grow up in one of the most biodiverse places on Earth.",
+    tag:   "🌊 Beach Tour · Bocas del Toro",
+    num:   "Tour 02",
+    title: "The Sloth Tour",
+    // ── SEO: "Bocas beach tour", "Playa Bluff excursion" ──
+    desc:  "Named after the sloths that hang from the coastal palms of Playa Bluff, this excursion traces the wildest edge of Isla Colon. Luis shares deep Ngöbe knowledge — the stories behind the coastal plants, the wildlife that depends on this stretch of Caribbean shore, and what it means to grow up in one of the most biodiverse corners of Bocas del Toro and all of Central America.",
     details: [
       ["⏱", "1.5–2 hours"],
-      ["📍", "Along Bluff Beach coastline"],
+      ["📍", "Along the Playa Bluff coastline"],
       ["👟", "Easy — barefoot friendly"],
       ["🌴", "Ngöbe culture & coastal plants"],
-      ["👨‍👩‍👧", "Perfect for families & kids"],
+      ["👨‍👩‍👧", "Perfect for families and children"],
     ],
   },
 
   wildlife: {
-    eyebrow: "What you might encounter",
-    title1:  "Wildlife of",
-    titleEm: "Bluff",
-    sub:     "Bocas del Toro is one of the most biodiverse corners of Central America. Every walk with Luis is a new chapter of the same extraordinary story.",
+    eyebrow: "Bocas del Toro Wildlife",
+    title1:  "The fauna of",
+    titleEm: "Isla Colon",
+    sub:     "Bocas del Toro is one of the most biodiverse corners of Central America. Every excursion with Luis through the jungle or along Bluff beach is a new chapter of the same extraordinary story.",
     items: [
       { emoji: "🦜", label: "Oropendola"        },
       { emoji: "🐒", label: "Howler Monkeys"    },
       { emoji: "🦎", label: "Green Iguanas"     },
       { emoji: "🐦", label: "Manakin Birds"     },
       { emoji: "🦋", label: "Morpho Butterflies"},
-      { emoji: "🐸", label: "Poison Dart Frogs" },
+      { emoji: "🐸", label: "Dart Frogs"        },
       { emoji: "🦥", label: "Three-Toed Sloths" },
       { emoji: "🌺", label: "Tropical Orchids"  },
       { emoji: "🦀", label: "Land Crabs"        },
@@ -111,40 +115,40 @@ const T = {
   },
 
   why: {
-    eyebrow: "Why choose Luis",
+    eyebrow: "Why choose Luis for your Bocas tour",
     title1:  "Not just a guide.",
-    titleEm: "A guardian of the forest.",
+    titleEm: "A guardian of the forest",
     cards: [
-      { icon: "🌱", title: "Born on the Island",          body: "Luis grew up in the jungle of Bluff, Bocas del Toro. Every trail, plant, and animal is part of his lived experience — not from a textbook." },
-      { icon: "🏡", title: "Ngöbe Indigenous Knowledge",  body: "He carries generations of Ngöbe wisdom — the stories, plant knowledge, and cultural meaning behind everything this land provides." },
-      { icon: "🔭", title: "Wildlife Tracker",            body: "His trained eye catches what visitors miss: a sloth hidden in the bark, a dart frog on moss, a manakin dancing mid-air." },
-      { icon: "💬", title: "Warm & Passionate",           body: "More than a guide, Luis is a storyteller. Every stop along the trail comes with a story, a laugh, and a genuine human connection." },
-      { icon: "🌊", title: "Ocean & Jungle Expert",       body: "From the powerful waves of Bluff to the silent cathedral of the jungle, Luis knows this entire ecosystem intimately." },
-      { icon: "♻️", title: "Low Impact & Responsible",    body: "Small groups, no engines, no extraction. Luis walks lightly and teaches you to do the same — leaving the jungle exactly as you found it." },
+      { icon: "🌱", title: "Born in Playa Bluff",          body: "Luis grew up in the jungle of Bluff, Isla Colon — Bocas del Toro. Every trail, plant, and animal is part of his lived experience, not a textbook." },
+      { icon: "🏡", title: "Indigenous Ngöbe Wisdom",     body: "He carries generations of Ngöbe wisdom — the stories, the plant names, and the cultural meaning behind everything this land in Bocas del Toro provides." },
+      { icon: "🔭", title: "Isla Colon Wildlife Tracker",   body: "His trained eye catches what visitors miss: a sloth camouflaged in the bark, a dart frog on the moss, or a manakin dancing in mid-air." },
+      { icon: "💬", title: "Warm and Passionate",        body: "More than a Bocas del Toro guide, Luis is a storyteller. Every stop on the trail comes with a story, a laugh, and a genuine human connection." },
+      { icon: "🌊", title: "Bocas Sea & Jungle Expert",     body: "From the powerful waves of Playa Bluff to the cathedral silence of the inner Isla Colon jungle, Luis intimately knows this entire extraordinary ecosystem." },
+      { icon: "♻️", title: "Low Impact & Responsible",    body: "Small groups, no motors, no extraction. Luis walks lightly and teaches you to do the same — leaving the Bocas jungle exactly as you found it." },
     ],
   },
 
   banner: {
-    location: "Bluff Beach · Bocas del Toro",
-    title1:   "Panama",
+    location: "Playa Bluff · Bocas del Toro · Panama",
+    title1:   "Bocas del Toro",
     titleEm:  "unfiltered.",
     title2:   "",
-    sub:      "Jungle, ocean, and pure wild life. Bocas del Toro as few ever experience it.",
+    sub:      "Jungle tours, beach excursions, and pure wildlife on Isla Colon — Bocas del Toro as few ever see it.",
   },
 
   contact: {
-    eyebrow: "Ready to explore?",
-    title:   "Book your tour with Luis",
-    sub:     "Tours run daily, weather permitting. Small groups only. Send Luis a message on WhatsApp to check availability and reserve your spot.",
+    eyebrow: "Ready to explore Bocas del Toro?",
+    title:   "Book your Playa Bluff tour",
+    sub:     "Tours depart daily from Playa Bluff, Isla Colon, weather permitting. Small groups only. Message Luis on WhatsApp to check availability and reserve your spot in Bocas del Toro.",
     cta:     "Message Luis on WhatsApp",
-    note:    "Replies within a few hours · Bocas del Toro, Panama",
+    note:    "Responds within hours · Playa Bluff, Bocas del Toro, Panama",
   },
 
-  wa: { tooltip: "Chat with Luis" },
+  wa:     { tooltip: "Chat with Luis · Bocas Tours" },
 
   footer: {
-    tagline: "Nature Tours · Bluff Beach · Bocas del Toro, Panama",
-    credit:  "Guided by Luis, island native.",
+    tagline: "Tours & Excursions · Playa Bluff · Bocas del Toro · Isla Colon, Panama",
+    credit:  "Guided by Luis, native of Playa Bluff.",
   },
 };
 
@@ -266,12 +270,12 @@ function FloatingWhatsApp() {
 // ─────────────────────────────────────────────────────────────────────────────
 export default function Page() {
   const heroRef = useRef(null);
-const containerRef = useRef(null);
-const { scrollYProgress } = useScroll({ 
-  target: heroRef,
-  container: containerRef,
-  offset: ["start start", "end start"],
-});
+  const containerRef = useRef(null);
+  const { scrollYProgress } = useScroll({ 
+    target: heroRef,
+    container: containerRef,
+    offset: ["start start", "end start"],
+  });
   const heroY       = useTransform(scrollYProgress, [0, 1], ["0%", "28%"]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
@@ -283,7 +287,7 @@ const { scrollYProgress } = useScroll({
   }, []);
 
   return (
-<div ref={containerRef} className="bg-[#fdfcf8] text-[#152b1d] overflow-x-hidden relative">
+    <div ref={containerRef} className="bg-[#fdfcf8] text-[#152b1d] overflow-x-hidden relative">
 
       <FloatingWhatsApp />
 
@@ -296,7 +300,7 @@ const { scrollYProgress } = useScroll({
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
-        <a href="#" className="font-serif text-xl text-white tracking-wide no-underline">
+        <a href="#" className="font-serif text-xl text-white tracking-wide no-underline" aria-label="Bocas Bluff Tours - Inicio">
          <em className="text-[#93c47d] not-italic font-bold">Bluff</em> Tours
         </a>
         <ul className="hidden md:flex gap-8 list-none m-0 p-0">
@@ -321,16 +325,16 @@ const { scrollYProgress } = useScroll({
       </motion.nav>
 
       {/* ── HERO ────────────────────────────────────────────────────────── */}
-      {/* Added explicit relative positioning and style to ensure non-static position */}
       <section 
         ref={heroRef} 
         className="relative h-screen min-h-[640px] flex items-center justify-center overflow-hidden"
         style={{ position: 'relative' }}
+        aria-label="Tours y excursiones en Bocas del Toro, Playa Bluff, Isla Colón"
       >
-<motion.div className="absolute inset-0" style={{ y: heroY, position: 'absolute' }}>
+        <motion.div className="absolute inset-0" style={{ y: heroY, position: 'absolute' }}>
           <Image 
             src="/photo5.png" 
-            alt="Bluff Beach Bocas del Toro" 
+            alt="Vista de Playa Bluff en Bocas del Toro, Isla Colón, Panamá" 
             fill 
             priority 
             sizes="100vw"
@@ -347,6 +351,17 @@ const { scrollYProgress } = useScroll({
           >
             {T.hero.location}
           </motion.span>
+
+          {/*
+            ── SEO NOTE ──────────────────────────────────────────────────────
+            H1 is the single most important on-page SEO signal.
+            Previous: "La Jungla está Viva. Ven a Descubrirla." (zero keywords)
+            New: "Tours en Bocas del Toro con un guía nativo de la selva."
+            Targets: "tours bocas del toro", "tours selva bocas del toro",
+                     "guía bocas del toro", "tours isla colón"
+            The <em> keeps the visual emphasis on the brand keyword.
+            ──────────────────────────────────────────────────────────────────
+          */}
           <motion.h1
             className="font-serif text-5xl md:text-7xl font-black text-white leading-[1.05] mb-6 drop-shadow-2xl"
             initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
@@ -355,6 +370,7 @@ const { scrollYProgress } = useScroll({
             {T.hero.title1} <em className="text-[#93c47d]">{T.hero.titleEm}</em>
             <br />{T.hero.title2}
           </motion.h1>
+
           <motion.p
             className="text-[#cdddc5] text-lg md:text-xl font-light leading-relaxed max-w-xl mx-auto mb-10"
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
@@ -415,7 +431,7 @@ const { scrollYProgress } = useScroll({
               <div className="relative h-[560px] rounded overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
                 <Image 
                   src="/photo1.png" 
-                  alt="Luis your guide" 
+                  alt="Luis, guía nativo de Playa Bluff, Bocas del Toro, Isla Colón, Panamá" 
                   fill 
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover" 
@@ -468,11 +484,11 @@ const { scrollYProgress } = useScroll({
 
           {/* Tour 1 */}
           <Reveal delay={0.1} className="mb-14">
-            <div className="grid md:grid-cols-2 rounded-lg overflow-hidden border border-white/8 shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
+            <article className="grid md:grid-cols-2 rounded-lg overflow-hidden border border-white/8 shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
               <div className="relative min-h-[480px]">
                 <Image 
                   src="/photo3.png" 
-                  alt={T.tour1.title} 
+                  alt="Tour sendero selva Bocas del Toro - excursión guiada por la jungla de Playa Bluff, Isla Colón" 
                   fill 
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover" 
@@ -500,12 +516,12 @@ const { scrollYProgress } = useScroll({
                   {T.tours.cta}
                 </motion.a>
               </div>
-            </div>
+            </article>
           </Reveal>
 
           {/* Tour 2 */}
           <Reveal delay={0.15}>
-            <div className="grid md:grid-cols-2 rounded-lg overflow-hidden border border-white/8 shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
+            <article className="grid md:grid-cols-2 rounded-lg overflow-hidden border border-white/8 shadow-[0_24px_80px_rgba(0,0,0,0.4)]">
               <div className="bg-[#152b1d] p-10 md:p-14 flex flex-col justify-center order-2 md:order-1">
                 <span className="font-['Caveat',cursive] text-[#93c47d] text-lg mb-2 block">{T.tour2.num}</span>
                 <h3 className="font-serif text-4xl font-bold text-white leading-tight mb-5">{T.tour2.title}</h3>
@@ -527,7 +543,7 @@ const { scrollYProgress } = useScroll({
               <div className="relative min-h-[480px] order-1 md:order-2">
                 <Image 
                   src="/photo2.png" 
-                  alt={T.tour2.title} 
+                  alt="Tour playa perezosos Bocas del Toro - excursión en Playa Bluff, Isla Colón, Panamá" 
                   fill 
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover" 
@@ -537,25 +553,25 @@ const { scrollYProgress } = useScroll({
                   {T.tour2.tag}
                 </span>
               </div>
-            </div>
+            </article>
           </Reveal>
         </div>
       </section>
 
       {/* ── PHOTO STRIP ─────────────────────────────────────────────────── */}
-      <div className="grid grid-cols-2 md:grid-cols-4 h-64 md:h-80">
+      <div className="grid grid-cols-2 md:grid-cols-4 h-64 md:h-80" role="presentation">
         {[
-          { src: "/photo4.png", sizes: "(max-width: 768px) 50vw, 25vw" },
-          { src: "/photo6.png", sizes: "(max-width: 768px) 50vw, 25vw" },
-          { src: "/photo7.png", sizes: "(max-width: 768px) 50vw, 25vw" },
-          { src: "/photo9.png", sizes: "(max-width: 768px) 50vw, 25vw" }
-        ].map(({ src, sizes }, i) => (
+          { src: "/photo4.png", alt: "Fauna salvaje en la selva de Bocas del Toro, Isla Colón" },
+          { src: "/photo6.png", alt: "Playa virgen en Bocas del Toro, Panamá" },
+          { src: "/photo7.png", alt: "Naturaleza tropical en Playa Bluff, Bocas del Toro" },
+          { src: "/photo9.png", alt: "Excursión por la selva de Isla Colón, Bocas del Toro" }
+        ].map(({ src, alt }, i) => (
           <FadeIn key={src} delay={i * 0.1} className="relative overflow-hidden group">
             <Image 
               src={src} 
-              alt="Wildlife Bocas del Toro" 
+              alt={alt}
               fill
-              sizes={sizes}
+              sizes="(max-width: 768px) 50vw, 25vw"
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-[#152b1d]/25 group-hover:bg-[#152b1d]/0 transition-colors duration-500" />
@@ -624,7 +640,7 @@ const { scrollYProgress } = useScroll({
         <div className="absolute inset-0">
           <Image 
             src="/photo6.png" 
-            alt="Bocas del Toro nature" 
+            alt="Vista aérea de la naturaleza y el mar de Bocas del Toro, Panamá" 
             fill 
             sizes="100vw"
             className="object-cover" 
@@ -672,7 +688,7 @@ const { scrollYProgress } = useScroll({
           Bluff<em className="text-[#93c47d] not-italic font-bold">Tours</em>
         </p>
         <p className="text-white/30 text-xs tracking-widest uppercase mb-3">{T.footer.tagline}</p>
-        <p className="text-white/20 text-xs">© {new Date().getFullYear()} WildBluff. {T.footer.credit}</p>
+        <p className="text-white/20 text-xs">© {new Date().getFullYear()} Bocas Bluff Tours. {T.footer.credit}</p>
       </footer>
 
     </div>
