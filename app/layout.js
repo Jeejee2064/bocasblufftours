@@ -25,7 +25,10 @@ export const metadata = {
   },
   description:
     "Guided tours in Bocas del Toro, Isla Colón, Panama. Jungle & Playa Bluff beach excursions with Luis, a native Ngöbe guide. Small groups. Book on WhatsApp.",
-  keywords: [
+  verification: {
+    google: 'MfhF9FfEwkC_mXH8s0GyOeNNNbWTDSW027uLFkA3lXo',
+  },
+    keywords: [
     "bocas del toro tours",
     "bocas del toro guided tour",
     "isla colon tours panama",

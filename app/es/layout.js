@@ -26,7 +26,10 @@ export const metadata = {
   },
   description:
     "Tours guiados en Bocas del Toro, Isla Colón, Panamá. Excursiones de selva y playa Playa Bluff con Luis, guía nativo Ngöbe. Grupos pequeños. Reserva por WhatsApp.",
-  keywords: [
+  verification: {
+    google: 'MfhF9FfEwkC_mXH8s0GyOeNNNbWTDSW027uLFkA3lXo',
+  },
+    keywords: [
     "tours bocas del toro",
     "tour guiado bocas del toro",
     "tours isla colon panama",
