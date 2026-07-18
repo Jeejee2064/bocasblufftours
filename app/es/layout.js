@@ -94,10 +94,10 @@ export const metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico",   sizes: "any"              },
-      { url: "/icon-16.png",   type: "image/png", sizes: "16x16"   },
-      { url: "/icon-32.png",   type: "image/png", sizes: "32x32"   },
-      { url: "/icon-192.png",  type: "image/png", sizes: "192x192" },
-      { url: "/icon-512.png",  type: "image/png", sizes: "512x512" },
+      { url: "/favicon-16x16.png",   type: "image/png", sizes: "16x16"   },
+      { url: "/favicon-32x32.png",   type: "image/png", sizes: "32x32"   },
+      { url: "/android-chrome-192x192.png",  type: "image/png", sizes: "192x192" },
+      { url: "/android-chrome-512x512.png",  type: "image/png", sizes: "512x512" },
     ],
     apple: [
       { url: "/apple-touch-icon.png", sizes: "180x180" },
@@ -119,11 +119,11 @@ const jsonLd = {
       "@id":   "https://bocasblufftours.com/es/#business",
       name:    "Bocas Bluff Tours",
       url:     "https://bocasblufftours.com/es",
-      logo:    "https://bocasblufftours.com/icon-512.png",
+      logo:    "https://bocasblufftours.com/android-chrome-512x512.png",
       image:   "https://bocasblufftours.com/og-image.jpg",
       description:
         "Tours de naturaleza guiados en Bocas del Toro, Isla Colón, Panamá. Excursiones de selva y playa en Playa Bluff con Luis, guía nativo Ngöbe.",
-      telephone: "+50765330998",
+      telephone: "+50768061204",
       address: {
         "@type":         "PostalAddress",
         streetAddress:   "Playa Bluff",
@@ -151,11 +151,11 @@ const jsonLd = {
       },
       contactPoint: {
         "@type":           "ContactPoint",
-        telephone:         "+50765330998",
+        telephone:         "+50768061204",
         contactType:       "reservations",
         availableLanguage: ["Spanish", "English"],
       },
-      sameAs: ["https://wa.me/50765330998"],
+      sameAs: ["https://wa.me/50768061204"],
     },
     {
       "@type":       "TouristAttraction",
