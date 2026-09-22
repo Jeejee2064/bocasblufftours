@@ -123,7 +123,7 @@ const jsonLd = {
       image:   "https://bocasblufftours.com/og-image.jpg",
       description:
         "Tours de naturaleza guiados en Bocas del Toro, Isla Colón, Panamá. Excursiones de selva y playa en Playa Bluff con Luis, guía nativo Ngöbe.",
-      telephone: "+50765513207",
+      telephone: "+50765526140",
       address: {
         "@type":         "PostalAddress",
         streetAddress:   "Playa Bluff",
@@ -151,11 +151,11 @@ const jsonLd = {
       },
       contactPoint: {
         "@type":           "ContactPoint",
-        telephone:         "+50765513207",
+        telephone:         "+50765526140",
         contactType:       "reservations",
         availableLanguage: ["Spanish", "English"],
       },
-      sameAs: ["https://wa.me/50765513207"],
+      sameAs: ["https://wa.me/50765526140"],
     },
     {
       "@type":       "TouristAttraction",
